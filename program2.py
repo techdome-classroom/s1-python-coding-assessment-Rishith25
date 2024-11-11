@@ -5,11 +5,11 @@ def decode_message( s: str, p: str) -> bool:
         n = len(pattern)
     
     # Create a DP table initialized with False values
-        dp = [[False] * (m + 1) for _ in range(p + 1)]
+        dp = [[False] * (m + 1) for _ in range(n + 1)]
         dp[0][0] = True  # Empty pattern matches empty message
 
         # Handle patterns that start with '*'
-        for i in range(1, p + 1):
+        for i in range(1, n + 1):
                 if pattern[i - 1] == '*':
                 dp[i][0] = dp[i - 1][0]
         
