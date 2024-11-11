@@ -3,8 +3,6 @@ def decode_message( s: str, p: str) -> bool:
 # write your code here
         m = len(s)
         n = len(p)
-    
-    # Create a DP table initialized with False values
         dp = [[False] * (m + 1) for _ in range(n + 1)]
         dp[0][0] = True  # Empty pattern matches empty message
 
