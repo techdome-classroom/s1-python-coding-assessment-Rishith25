@@ -1,7 +1,7 @@
 def decode_message( s: str, p: str) -> bool:
 
 # write your code here
-m = len(message)
+        m = len(message)
     p = len(pattern)
     
     # Create a DP table initialized with False values
