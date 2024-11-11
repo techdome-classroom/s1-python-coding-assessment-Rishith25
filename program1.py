@@ -15,12 +15,12 @@ class Solution:
             dfs(x, y + 1)  
             dfs(x, y - 1) 
         
-        island_count = 0
+        count = 0
         for i in range(len(grid)):
             for j in range(len(grid[0])):
                 if grid[i][j] == 'L':
                     dfs(i, j)
-                    island_count += 1
+                    count += 1
         
-        return island_count
+        return count
                     
